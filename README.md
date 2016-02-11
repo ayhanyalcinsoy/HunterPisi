@@ -1,2 +1,2 @@
 # KaraPisi
-Pisi packages of ofeensive security
+Pisi packages of offensive security
