@@ -1,0 +1,40 @@
+<PISI>
+    <Source>
+        <Name>bully</Name>
+        <Homepage>https://github.com/Lrs121/bully</Homepage>
+        <Packager>
+            <Name>İbrahim KARAGÜZEL</Name>
+            <Email>karaguzelibrahim@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <PartOf>network</PartOf>
+        <IsA>app:console</IsA>
+        <Summary>Implementation of the WPS brute force attack, written in C</Summary>
+        <Description>Bully is a new implementation of the WPS brute force attack, written in C. It is conceptually identical to other programs, in that it exploits the (now well known) design flaw in the WPS specification. It has several advantages over the original reaver code. These include fewer dependencies, improved memory and cpu performance, correct handling of endianness, and a more robust set of options. It runs on Linux, and was specifically developed to run on embedded Linux systems (OpenWrt, etc) regardless of architecture.</Description>
+        <BuildDependencies>
+            <Dependency>libpcap-devel</Dependency>
+            <Dependency>openssl-devel</Dependency>
+        </BuildDependencies>
+        <Archive type="targz" sha1sum="361d559153151a5b8367139ae7ca1f903a22e3b7">/home/silentenigma/Kaynaklar/bully-master-1.0-22.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>bully</Name>
+        <Summary>Implementation of the WPS brute force attack, written in C</Summary>
+        <RuntimeDependencies>
+            <Dependency>libpcap</Dependency>
+            <Dependency>openssl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="22">
+            <Date>2016-02-13</Date>
+            <Version>1.0</Version>
+            <Comment>Implementation of the WPS brute force attack, written in C</Comment>
+            <Name>İbrahim KARAGÜZEL</Name>
+            <Email>karaguzelibrahim@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
